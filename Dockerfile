@@ -5,6 +5,8 @@ MAINTAINER Marcos Silva<mvssba@gmail.com>
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
+ADD . /app/
+
 # Copy go mod and sum files
 COPY go.mod go.sum ./
 
